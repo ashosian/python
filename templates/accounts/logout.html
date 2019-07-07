@@ -1,0 +1,35 @@
+{% extends "partials/layout.html" %}
+
+{% block title %}
+    Home 
+{% endblock title %}
+
+
+{% block header %}
+    {% include "partials/header.html" %}
+{% endblock header %}
+
+{% block breakingnews %}
+{% endblock breakingnews %}
+
+
+{% block allnews %}
+<div class="col-md-6">
+    <p>You were logged out successfully. <a href="{% url 'login' %}">Login Again?</a></p>
+    <p>Back to <a href="{% url 'home' %}">Home</a></p>
+</div>
+{% endblock allnews %}
+
+{% block topnews %}
+    {% include "partials/topnews.html" %}
+{% endblock topnews %}
+
+
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock footer %}
+
+
+{% block scripts %}
+    {% include "partials/scripts.html" %}
+{% endblock scripts %}
